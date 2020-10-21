@@ -1,0 +1,53 @@
+/* default css */
+* {
+    font-size: 30px;
+}
+.parent {
+    background-color: #33E9FF;
+    padding: 30px;
+}
+
+.one {
+    background-color: #39FF33;
+    padding: 30px;
+}
+
+.two {
+    background-color: #FFF333;
+    padding: 30px;
+}
+
+.three {
+    background-color: #FF8A33;
+    padding: 30px;
+}
+
+
+/* relative css */
+.relative .one {
+    position: relative;
+    left: 80px;
+    top: 20px;
+}
+
+/* absolute css */
+.absolute .parent {
+    position: relative;
+}
+
+.absolute .one {
+    position: absolute;
+    top: 20px;
+}
+
+
+/* fixed css */
+.fixed .parent {
+    position: relative;
+}
+
+.fixed .one {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}

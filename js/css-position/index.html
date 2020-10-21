@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>CSS Position</h1>
+    <!-- static position - document flow position(default) -->
+    <div class="static">
+        <h2>Static</h2>
+        <div class="parent">
+            Parent
+            <div class="one">One</div>
+            <div class="two">Two</div>
+        </div>
+    </div>
+    
+    <!-- relative position - is same as static. changes position(top,left,bottom,right) relative 
+        to its original position in document flow -->
+    <div class="relative">
+        <h2>Relative</h2>
+        <div class="parent">
+            Parent
+            <div class="one">One</div>
+            <div class="two">Two</div>
+        </div>
+    </div>
+
+    <!-- absolute position - absolutely positions element inside of some parent container that 
+        it can reference(any position apart from static). gets removed from document flow and 
+        other elements ignore it completely -->
+    <div class="absolute">
+        <h2>Absolute</h2>
+        <div class="parent">
+            Parent
+            <div class="one">One</div>
+            <div class="two">Two</div>
+        </div>
+    </div>
+
+    <!-- fixed position- same as absolute. it is fixed based on entire html element. it stay in 
+        same place when we scroll -->
+    <div class="fixed">
+        <h2>Fixed</h2>
+        <div class="parent">
+            Parent
+            <div class="one">One</div>
+            <div class="two">Two</div>
+        </div>
+    </div>
+
+</body>
+</html>

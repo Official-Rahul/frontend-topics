@@ -1,17 +1,22 @@
 import React,{useState} from 'react';
 import './App.css';
-import ButtonComponent from './components/ButtonComponent';
-import ButtonFunctionComponent from './components/ButtonFunctionComponent';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 function App() {
 
-  const [flag, setFlag] = useState(true)
-
   return (
     <div className="App">
-      <button onClick={()=>setFlag(!flag)}>Show/Hide</button>
-      {flag && <ButtonComponent />}
-      {flag && <ButtonFunctionComponent />}
+      <div className="sidenav">
+        <a href="#">
+          <img src='https://granter-staging.paytm.in/public/images/paytm_logo.png' alt='paytm logo'/>
+        </a>
+        <a href="#">Calculator</a>
+        <a href="#">Movie App</a>
+        <a href="#">Weather</a>
+      </div>
+      <div className="main">
+
+      </div>
     </div>
   );
 }
