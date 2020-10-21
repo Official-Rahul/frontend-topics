@@ -1,0 +1,11 @@
+.start {
+    width: 100%;
+    color: #fefefe;
+    height: 30px;
+    font-size: 20px;
+    background-color: blue;
+}
+
+.message {
+    width: 100%;
+}
